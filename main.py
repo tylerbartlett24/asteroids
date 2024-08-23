@@ -46,7 +46,7 @@ def main():
                 sys.exit()
             for bullet in shots:
                 if rock.collision_detect(bullet):
-                    rock.kill()
+                    rock.split()
                     bullet.kill()
                 
                        
